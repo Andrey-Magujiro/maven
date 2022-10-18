@@ -17,6 +17,42 @@
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
+        <some.proprty>hi, it's me!</some.proprty>
     </properties>
+
+    <!--
+    <profiles>
+        <profile>
+
+            <activation>
+                <property>
+                    <name>prop.active</name>
+                    <value>on</value>
+                </property>
+                <file>
+                    <exists>${basedir}\pom.xml</exists>
+                </file>
+            </activation>
+
+            <id>prod</id>
+            <properties>
+                <some.property>i'm not saying hi nobody!</some.property>
+            </properties>
+
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-compiler-plugin</artifactId>
+                        <version>3.8.1</version>
+                        <configuration>
+                            <debug>false</debug>
+                            <optimize>true</optimize>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>!-->
 
 </project>
